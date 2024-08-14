@@ -1,0 +1,19 @@
+package br.com.aula2;
+import javax.swing.*;
+import java.sql.SQLOutput;
+import java.util.Scanner;
+
+public class Aulaa {
+    public static void main(String[] args) {
+
+    Scanner entrada = new Scanner(System.in);
+
+    String nome = JOptionPane.showInputDialog("Digite seu nome");
+    double peso = Double.parseDouble(JOptionPane.showInputDialog("Digite seu peso"));
+    int idade = Integer.parseInt(JOptionPane.showInputDialog("Digite sua idade"));
+
+        System.out.printf("Nome: %s \nPeso: %.2f \nIdade: %d", nome, peso, idade);
+
+                entrada.close();
+    }
+}
