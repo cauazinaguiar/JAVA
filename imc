@@ -1,0 +1,25 @@
+package br.com.aula2;
+import javax.swing.*;
+import java.awt.*;
+import java.sql.SQLOutput;
+import java.util.Scanner;
+
+public class Aulaa {
+    public static void main(String[] args) {
+
+    Scanner entrada = new Scanner(System.in);
+
+    String nome = JOptionPane.showInputDialog("Digite seu nome");
+    double peso = Double.parseDouble(JOptionPane.showInputDialog("Digite seu peso"));
+    float altura = Float.parseFloat(JOptionPane.showInputDialog("Digite sua altura"));
+
+    double imc;
+
+    imc= peso/(altura*altura);
+    
+
+        JOptionPane.showMessageDialog(null, "Nome: "+ nome.toUpperCase() +"\nPeso: "+peso +"\nAltura: "+ altura +"\nIMC: "+ imc);
+
+                entrada.close();
+    }
+}
