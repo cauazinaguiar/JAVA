@@ -1,0 +1,17 @@
+package operador.ternario;
+
+import javax.swing.*;
+import java.sql.SQLOutput;
+
+public class Operadorternario {
+    public static void main(String[] args) {
+
+        String media = JOptionPane.showInputDialog("Digite a nota");
+
+        double mediaParse = Double.parseDouble(media);
+
+        String resultado = mediaParse >= 7 ? "Aprovado" : "Reprovado";
+
+        System.out.println(resultado);
+            }
+}
