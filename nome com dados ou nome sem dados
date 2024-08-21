@@ -1,0 +1,16 @@
+package operador.ternario;
+
+import javax.swing.*;
+import java.sql.SQLOutput;
+
+public class Operadorternario {
+    public static void main(String[] args) {
+
+        String nome = JOptionPane.showInputDialog("Digite seu nome");
+        String result = nome.isEmpty() ? "Nome vazio": "Nome com dados";
+
+
+        System.out.println(result);
+    }
+}
+
