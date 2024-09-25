@@ -1,0 +1,18 @@
+package Atividade;
+
+import javax.swing.*;
+
+public class ContaMain {
+    public static void main(String[] args) {
+        ContaBancaria contaBancaria = new ContaBancaria();
+
+                String titular = JOptionPane.showInputDialog("Digite o nome do titular:");
+                int numeroConta = Integer.parseInt(JOptionPane.showInputDialog("Digite o número da conta:"));
+
+
+                JOptionPane.showMessageDialog(null, "Bem-vindo(a), " + contaBancaria.getTitular() + "! Seu saldo inicial é R$" + contaBancaria.getSaldo());
+
+
+
+            }
+}
